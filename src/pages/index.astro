@@ -1,16 +1,15 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro"
+import ServiciosComponent from "../components/serviciosComponent.astro"
+const titlePage = "Monev Mx || AGENCIA ESPECIALIZADA"
+const indexDescription = "Monev es una agencia especializada en generar soluciones estratégicamente creativas para satisfacer las necesidades de sus clientes. Su metodología de trabajo está basada en el Design Thinking, centrada en el usuario y orientada a la acción. El objetivo de Monev es ofrecer soluciones innovadoras, reales, viables y alcanzables que ayuden a sus clientes a alcanzar sus objetivos."
 ---
+<BaseLayout titlePage={titlePage}>
+<h1>{titlePage}</h1>
+<p>{indexDescription}</p>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<div >
+    <ServiciosComponent />
+</div>
+
+</BaseLayout>

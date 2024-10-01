@@ -1,0 +1,21 @@
+---
+import ProyectPost from "../components/ProyectPost.astro"
+import BaseLayout from "../layouts/BaseLayout.astro"
+const titlePage = "Monev Mx || NUESTROS PROYECTOS"
+const allPost = await Astro.glob("../pages/posts/*.md")
+---
+
+<BaseLayout titlePage={titlePage}>
+<h1>{titlePage}</h1>
+<p>Nuestros proyectos</p>
+{
+    allPost.map((post) => (
+        <ProyectPost 
+        url={post.url} 
+        title={post.frontmatter.title}
+        previmg={post.frontmatter.previmg}
+        />
+    ))
+}
+</BaseLayout>
+

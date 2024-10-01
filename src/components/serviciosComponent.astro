@@ -1,0 +1,31 @@
+---
+const servicioBranding = "Branding"
+const servicioBrandingDescription = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quaerat dolores optio!"
+const imgBrandig = 'https://monev.com.mx/wp-content/uploads/2024/05/Diseno-sin-titulo-edited-2048x2048.png'
+const servicioPublicidad = "Branding"
+const servicioPublicidadDescription = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quaerat dolores optio!"
+const imgPublicidad = 'https://monev.com.mx/wp-content/uploads/2024/05/Diseno-sin-titulo-1-edited-2048x2048.png'
+
+---
+<div>
+    <h2>Servicios</h2>
+</div>
+<div class="flex-content">
+    <a href="#">
+        <h3>{servicioBranding}</h3>
+        <p>{servicioBrandingDescription}</p>
+        <img src={imgBrandig} width="300" alt="#" />
+    </a>
+    <a href="#">
+        <h3>{servicioPublicidad}</h3>
+        <p>{servicioPublicidadDescription}</p>
+        <img src={imgPublicidad} width="300" alt="#" />
+    </a>
+</div>
+
+<style>
+    .flex-content {
+        display: flex;
+        margin-top: ;
+    }
+</style>
