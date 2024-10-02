@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
 const titlePage = "Monev Mx || AGENCIA ESPECIALIZADA";
 const indexDescription =
     "Monev es una agencia especializada en generar soluciones estratégicamente creativas para satisfacer las necesidades de sus clientes. Su metodología de trabajo está basada en el Design Thinking, centrada en el usuario y orientada a la acción. El objetivo de Monev es ofrecer soluciones innovadoras, reales, viables y alcanzables que ayuden a sus clientes a alcanzar sus objetivos.";
@@ -7,13 +8,18 @@ const indexDescription =
 
 <BaseLayout titlePage={titlePage}>
 <!-- COMPONENTE DE PRESENTACION -->
+ <div>
     <div class="grid md:grid-cols-2 sm:grid-cols-2 gap-0 h-72">
         <div class="bg-blue-500 p-4">
-            <h1 class="m-5 font-bold">{titlePage}</h1>
-            <p>{indexDescription}</p>
+            <h1 class="my-5 font-bold font-sans text-3xl pt-10">{titlePage}</h1>
+            <p class="font-san md:text-2xl">{indexDescription}</p>
         </div>
-        <div class="bg-blue-500 p-4"></div>
+        <div class="bg-blue-500 p-4">
+            
+        </div>
     </div>
+ </div>
+
 <!-- COMPONENTE DE PROYECTOS -->
     <div
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 bg-gray-500 p-4 h-auto"
