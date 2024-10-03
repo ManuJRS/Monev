@@ -4,9 +4,11 @@ import Footer from "../components/footer.astro";
 import "../styles/global.css";
 
 const { titlePage } = Astro.props;
+
+
 ---
 
-<html lang="es">
+<html lang="es" class="!scroll-smooth">
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,10 +17,8 @@ const { titlePage } = Astro.props;
         <title>{titlePage}</title>
     </head>
     <body>
-        <div data-scroll-container>
-                <Header
-                    
-                />
+        <div>
+                <Header  class="fixed top-0 left-0 w-full bg-white shadow-md z-50"/>
                     <slot />
                 <Footer />
         </div>
