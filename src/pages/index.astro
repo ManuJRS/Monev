@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import "../styles/global.css";
-const titlePage = "Monev Mx || AGENCIA ESPECIALIZADA";
+const titlePage = "Monev Mx - AGENCIA ESPECIALIZADA";
 const indexDescription =
     "Monev es una agencia especializada en generar soluciones estratégicamente creativas para satisfacer las necesidades de sus clientes. Su metodología de trabajo está basada en el Design Thinking, centrada en el usuario y orientada a la acción. El objetivo de Monev es ofrecer soluciones innovadoras, reales, viables y alcanzables que ayuden a sus clientes a alcanzar sus objetivos.";
     
@@ -13,62 +13,141 @@ const indexDescription =
 <!-- COMPONENTE DE PRESENTACION -->
  <div>
     <div class="grid md:grid-cols-2 sm:grid-cols-2 gap-0 h-72">
-        <div class="bg-blue-500 p-4">
-            <h1 class="my-5 font-bold font-sans text-3xl pt-10">{titlePage}</h1>
-            <p class="font-san md:text-2xl">{indexDescription}</p>
+        <div class=" p-4">
+            <h1 class="my-5 font-bold font-sans text-3xl pt-10 title-color">{titlePage}</h1>
+            <p class="font-san md:text-2xl text-color">{indexDescription}</p>
         </div>
-        <div class="bg-blue-500 p-4">
+        <div class=" p-4">
             
         </div>
     </div>
  </div>
 
 <!-- COMPONENTE DE PROYECTOS -->
-    <div
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 bg-gray-500 p-4 h-auto "
-    >
-        <div
-            class="bg-green-500 p-4 md:col-span-1 sm:col-span-3 md:h-92 sm:h-64 h-64 cursor-pointer"
-        >
-            Proyecto #1
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 h-auto ">
+        <div class="relative p-4 md:col-span-1 sm:col-span-3 md:h-92 sm:h-64 h-64 cursor-pointer">
+        <a href="#">
+            <img 
+            src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
+            alt="proyecto 1"
+            class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
+            />
+            <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
+                <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
+                    <strong>Primer Proyecto</strong>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
+                    <span>11/11/11</span>
+                </div>
+            </div>
+        </a>
         </div>
-        <div
-            class="bg-red-500 p-4 md:col-span-2 sm:col-span-3 md:h-92 sm:h-64 h-64 cursor-pointer"
-        >
-            Proyecto #2
+        <div class="relative p-4 md:col-span-2 sm:col-span-3 md:h-92 sm:h-64 h-64 cursor-pointer">
+            <a href="#">
+                <img 
+                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
+                alt="proyecto 1"
+                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
+                />
+                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
+                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
+                        <strong>Primer Proyecto</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
+                        <span>11/11/11</span>
+                    </div>
+                </div>
+            </a> 
         </div>
-        <div class="bg-purple-500 p-4 md:h-72 sm:h-64 h-64 cursor-pointer">
-            Proyecto #3
+        <div class="relative p-4 md:h-72 sm:h-64 h-64 cursor-pointer">
+            <a href="#">
+                <img 
+                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
+                alt="proyecto 1"
+                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
+                />
+                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
+                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
+                        <strong>Primer Proyecto</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
+                        <span>11/11/11</span>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div class="bg-yellow-500 p-4 md:h-72 sm:h-64 h-64 cursor-pointer">
-            Proyecto #4
+        <div class="relative p-4 md:h-72 sm:h-64 h-64 cursor-pointer">
+            <a href="#">
+                <img 
+                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
+                alt="proyecto 1"
+                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
+                />
+                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
+                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
+                        <strong>Primer Proyecto</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
+                        <span>11/11/11</span>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div
-            class="bg-pink-500 p-4 row-span-2 sm:h-64 md:h-120 h-64 cursor-pointer"
-        >
-            Proyecto #5
+        <div class="relative p-4 row-span-2 sm:h-64 md:h-120 h-64 cursor-pointer">
+            <a href="#">
+                <img 
+                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
+                alt="proyecto 1"
+                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
+                />
+                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
+                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
+                        <strong>Primer Proyecto</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
+                        <span>11/11/11</span>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div
-            class="bg-slate-200 p-4 col-span-0 sm:h-64 md:h-72 h-64 cursor-pointer"
-        >
-            Proyecto #6
+        <div class="relative p-4 col-span-0 sm:h-64 md:h-72 h-64 cursor-pointer">
+            <a href="#">
+                <img 
+                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
+                alt="proyecto 1"
+                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
+                />
+                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
+                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
+                        <strong>Primer Proyecto</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
+                        <span>11/11/11</span>
+                    </div>
+                </div>
+            </a>
         </div>
-        <div
-            class="bg-slate-200 p-4 col-span-0 sm:h-64 md:h-72 h-64 cursor-pointer"
-        >
-            Proyecto #7
+        <div class="relative p-4 col-span-0 sm:h-64 md:h-72 h-64 cursor-pointer">
+            <a href="#">
+                <img 
+                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
+                alt="proyecto 1"
+                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
+                />
+                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
+                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
+                        <strong>Primer Proyecto</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
+                        <span>11/11/11</span>
+                    </div>
+                </div>
+            </a>
         </div>
     </div>
 <!-- COMPONENTE DE NUESTROS SERVICIOS -->
     <div class="grid md:grid-cols-2 gap-0 md:h-80 sm:grid-cols-1">
-        <div class="bg-blue-500 p-4 py-20">
+        <div class="bg-color-componentOne p-4 py-20">
             <ul class="divide-y">
                 <li class="py-5">
-                    <a href="#" class="font-bold text-2xl tracking-wider"
+                    <a href="#" class="font-bold text-2xl tracking-wider text-color-contet-withe"
                         >Branding</a>
                 </li>
                 <li class="py-5">
-                    <a href="#" class="font-bold text-2xl tracking-wider"
+                    <a href="#" class="font-bold text-2xl tracking-wider text-color-contet-withe"
                         >Publicidad</a>
                 </li>
                 <li>
@@ -77,9 +156,9 @@ const indexDescription =
                 </li>
             </ul>
         </div>
-        <div class="bg-blue-500 p-4">
-            <div class="py-20">
-                <h3 class="font-bold">Nuestros servicios</h3>
+        <div class="bg-color-componentOne p-4">
+            <div class="py-20 text-color-contet-withe-p">
+                <h3 class="font-bold "><strong>Nuestros servicios</strong></h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Asperiores labore temporibus consequatur veniam possimus, iure
@@ -87,9 +166,8 @@ const indexDescription =
                     repellendus ipsam dolor dolore excepturi commodi!
                 </p>
             </div>
-<!-- COMPONENTE DE EVIDENCIAS -->
-<div class="py-20">
-                <h3 class="font-bold ">Nuestros servicios</h3>
+        <div class="py-20 text-color-contet-withe-p">
+                <h3 class="font-bold "><strong>Nuestros servicios</strong></h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Asperiores labore temporibus consequatur veniam possimus,
@@ -100,7 +178,7 @@ const indexDescription =
         </div>
     </div>
     <div class="grid md:grid-cols-2 gap-0 md:h-80 sm:grid-cols-1">
-        <div class="bg-gray-500 p-4">
+        <div class="bg-gray-600 p-4">
             <div class="py-20">
                 <h3 class="font-bold">Nuestros servicios</h3>
                 <p>
@@ -121,7 +199,7 @@ const indexDescription =
                 </p>
             </div>
         </div>
-        <div class="bg-gray-500 p-4 py-20">
+        <div class="bg-gray-600 p-4 py-20">
             <ul class="divide-y">
                 <li class="py-5">
                     <a href="#" class="font-bold text-2xl tracking-wider"
@@ -140,7 +218,7 @@ const indexDescription =
     </div>
 <!-- COMPONENTE DE NUESTRAS REDES SOCIALES Y CONTACTO -->
     <div class="grid md:grid-cols-1 gap-0 md:h-72 sm:grid-cols-1">
-        <div class="bg-blue-500 p-4">
+        <div class="bg-gray-500 p-4">
             <div class="py-20">
                 <h3 class="font-bold">Nuestros servicios</h3>
                 <p>
