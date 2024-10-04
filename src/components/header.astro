@@ -1,15 +1,39 @@
 ---
-const headerLogo = "MONEV LOGO"
+const headerLogo = "MONEV LOGO";
 ---
-    <header class="fixed top-0 left-0 w-full shadow-md z-50">
-        <nav>
-            <h2>{headerLogo}</h2>
-            <div class="space-x-4">
-                <a href="/">Home</a>
-                <a href="/portafolio">Portafolio</a>
-                <a href="/nosotros">Nosotros</a>
-                <a href="/contacto">Contacto</a>
-            </div>
-        </nav>
-    </header>
 
+<header class="sticky relative top-0 left-0 w-full z-50">
+    <div class="abrir-menu menu-icon" id="abrir">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav class="nav visibl" id="nav">
+        <div class="menu-icon-x" id="cerrar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-list">
+            <li><a class="text-size" href="/">Home</a></li>
+            <li><a class="text-size" href="/portafolio">Portafolio</a></li>
+            <li><a class="text-size" href="/nosotros">Nosotros</a></li>
+            <li><a class="text-size" href="/contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<script>
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () =>{
+    nav.classList.add("visible");
+})
+
+cerrar.addEventListener("click", () =>{
+    nav.classList.remove("visible");
+})
+
+</script>

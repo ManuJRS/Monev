@@ -36,3 +36,119 @@
     background-color: #bcbcb4;
 }
 
+header {
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.text-size {
+    font-size: 3.75rem;
+}
+
+@media (max-width: 768px) {
+    .text-size {
+        font-size: 1.75rem;
+    }
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: end;
+    padding: 2rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: absolute;
+    height: 100vh;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 20;
+    background-color: #bcbcb4;
+    background-color: #1c1c1c;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    transition: 0.3s ease-in-out;
+
+}
+
+nav.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: 0.3s ease-in-out;
+}
+
+.menu-icon {
+    cursor: pointer;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 25px;
+    position: relative;
+  }
+  
+  .menu-icon span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    margin: 5px 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .menu-icon.open span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+    position: absolute;
+  }
+  
+  .menu-icon.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+
+
+  .menu-icon-x {
+    margin-top: 12px;
+    margin-right: 10px;
+    position: relative;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+  }
+  
+  .menu-icon-x span {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+  }
+  
+  .menu-icon-x span:nth-child(1) {
+    transform: rotate(45deg);
+    top: 10px;
+  }
+  
+  .menu-icon-x span:nth-child(2) {
+    opacity: 0; /* Esconde la línea del medio */
+  }
+  
+  .menu-icon-x span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
