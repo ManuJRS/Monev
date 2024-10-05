@@ -1,7 +1,27 @@
-@import 'locomotive-scroll/dist/locomotive-scroll.css';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: 'titleFont';
+  src: url('/src/assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'textFont';
+  src: url('/src/assets/fonts/Nunito/Nunito-Regular.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'titleFont';
+}
+
+p {
+  font-family: 'textFont';
+  text-align: justify;
+}
 
 .card-hover {
     opacity: 0;
@@ -21,11 +41,11 @@
 }
 
 .text-color {
-    color: #dad9d6;
+    color: rgb(131, 140, 153);
 }
 
 .text-color-contet-withe {
-    color: #74736f;
+    color: #dad9d6;
 }
 
 .text-color-contet-withe-p {
@@ -37,9 +57,7 @@
 }
 
 header {
-    
     display: flex;
-    align-items: center;
     justify-content: end;
 }
 
@@ -75,6 +93,7 @@ header {
     align-items: end;
     position: absolute;
     height: 100vh;
+    width: 100vw;
     gap: 1rem;
     top: 0;
     right: 0;
@@ -83,7 +102,6 @@ header {
     background-color: #1c1c1c;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     transition: 0.3s ease-in-out;
-
 }
 
 nav.visible {

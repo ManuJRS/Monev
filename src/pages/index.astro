@@ -1,10 +1,10 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import "../styles/global.css";
-const titlePage = "Monev Mx";
-const indexDescription =
-    "Monev es una agencia especializada en generar soluciones estratégicamente creativas para satisfacer las necesidades de sus clientes. Su metodología de trabajo está basada en el Design Thinking, centrada en el usuario y orientada a la acción. El objetivo de Monev es ofrecer soluciones innovadoras, reales, viables y alcanzables que ayuden a sus clientes a alcanzar sus objetivos.";
-    
+const titlePage = "Monev Mx - AGENCIA ESPECIALIZADA";
+const indexDescriptionOne =
+    "Monev es una agencia especializada en generar soluciones estratégicamente creativas para satisfacer las necesidades de sus clientes. Su metodología de trabajo está basada en el Design Thinking, centrada en el usuario y orientada a la acción";
+
+const indexDescriptiontwo = "El objetivo de Monev es ofrecer soluciones innovadoras, reales, viables y alcanzables que ayuden a sus clientes a alcanzar sus objetivos."
 
     
 ---
@@ -12,20 +12,22 @@ const indexDescription =
 <BaseLayout titlePage={titlePage}>
 <!-- COMPONENTE DE PRESENTACION -->
 
- <div class="absolute sticky top-0 z-10">
+ <div class="sticky top-0 z-10 pt-12 h-92">
     <div class="grid md:grid-cols-2 sm:grid-cols-2 gap-0 h-72">
         <div class="pl-2">
-            <h1 class="font-bold font-sans pt-2 pb-5 text-3xl title-color">{titlePage}</h1>
-            <p class="font-san md:text-2xl text-color">{indexDescription}</p>
+            <h1 class="font-bold pt-2 pb-5 text-2xl title-color">SOMOS UNA AGENCIA ESPECIALIZADA</h1>
+            <p class="md:text-2xl text-color pt-5 fonttextos"><strong>{indexDescriptionOne}</strong></p>
+            <p class="md:text-2xl text-color pt-5 fonttextos"><strong>{indexDescriptiontwo}</strong></p>
+
         </div>
-        <div class=" p-4">
+        <div class="p-10 h-20">
             
         </div>
     </div>
  </div>
 
 <!-- COMPONENTE DE PROYECTOS -->
- <div class="z-20 bg-gray-600 z-10 relative">
+ <div class="bg-gray-600 z-10 relative">
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 h-auto">
         <div class="relative p-4 md:col-span-1 sm:col-span-3 md:h-92 sm:h-64 h-64 cursor-pointer">
         <a href="#">
@@ -142,7 +144,7 @@ const indexDescription =
     </div>
 </div>
 <!-- COMPONENTE DE NUESTROS SERVICIOS -->
- <div class="z-20 bg-gray-600 z-10 relative">
+ <div class="z-20 bg-gray-600 relative">
     <div class="grid md:grid-cols-2 gap-0 md:h-80 sm:grid-cols-1">
         <div class="bg-color-componentOne p-4 py-20">
             <ul class="divide-y">
