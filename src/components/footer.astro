@@ -3,10 +3,78 @@ const titleFooter = "Monev Logo footer";
 import Social from "./Social.astro";
 ---
 
-<footer class="md:h-72 bg-color-componentOne z-50 absolute footer_content">
+<footer class="md:h-60 bg-color-componentOne z-50 absolute footer_content">
+    <div class="grid md:grid-cols-5 md:h-60 gap-0 sm:grid-cols-1">
+        <div class="md:col-span-2 block">
+            <div>
+                <h2 class="pt-4 pl-5 text-2xl text-color-contet-withe-t">Tienes un proyecto en mente?</h2>
+            </div>
+
+            <div class="pt-14">
+                <div class="flex pl-5">
+                    <a href="/contacto" class="font-bold text-lg enlace-menu-contact text-color-contet-withe-p" id="elementContactOne">pongámonos en contacto</a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 arrowContactOne" id="elementoContactTwo">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </div>
+                <p class="pr-48 pl-5 text-color-contet-withe-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem deserunt, quod dolorum quas fugiat, expedita iusto repudiandae explicabo neque quaerat odit obcaecati nostrum! Itaque quo necessitatibus sed placeat quia.</p>
+            </div>
+            <p></p>
+        </div>
+        <div class="md:col-span-1 pl-5 flex md:h-60 pb-7">
+            <div class="flex flex-col justify-end w-full pb-14">
+                <h2 class="pb-1 text-color-contet-withe-t">Donde nos encontramos?</h2>
+                <p class="text-color-contet-withe-p">Mérida, Yucatán, México</p>
+            </div>
+        </div>
+        <div class="md:col-span-1 pl-5 flex md:h-60 pb-7">
+            <div class="flex flex-col justify-end w-full pb-7">
+                <h2 class="pb-1 text-color-contet-withe-t">Contactanos</h2>
+                <div class="flex pb-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pr-1 text-color-contet-withe-p">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                    </svg>
+                    <a href="callto:1-800-123-4567" class="text-color-contet-withe-p">1-800-123-4567</a>
+
+                </div>
+                    <div class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 pr-1 text-color-contet-withe-p">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 9v.906a2.25 2.25 0 0 1-1.183 1.981l-6.478 3.488M2.25 9v.906a2.25 2.25 0 0 0 1.183 1.981l6.478 3.488m8.839 2.51-4.66-2.51m0 0-1.023-.55a2.25 2.25 0 0 0-2.134 0l-1.022.55m0 0-4.661 2.51m16.5 1.615a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V8.844a2.25 2.25 0 0 1 1.183-1.981l7.5-4.039a2.25 2.25 0 0 1 2.134 0l7.5 4.039a2.25 2.25 0 0 1 1.183 1.98V19.5Z" />
+                        </svg>                          
+                        <a href="mailto:email@example.com" class="text-color-contet-withe-p">monev@gmail.com</a>
+                    </div>
+            </div>
+        </div>
+        <div class="md:col-span-1 pl-5 flex md:h-60 pb-2">
+            <div class="flex flex-col justify-end w-full pb-7">
+                <h2 class="pb-1 text-color-contet-withe-t">Nuestras Redes</h2>
+                <div class="flex pb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 text-color-contet-withe-p">
+                        <path fill-rule="evenodd" d="M11.78 11.78a.75.75 0 0 0 0-1.06L6.56 5.5h3.69a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0-.75.75v5.5a.75.75 0 0 0 1.5 0V6.56l5.22 5.22a.75.75 0 0 0 1.06 0Z" clip-rule="evenodd" />
+                    </svg>
+                    <Social platform="instagram" username="monev_mx"/>
+
+                </div>
+                <div class="flex pb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 text-color-contet-withe-p">
+                        <path fill-rule="evenodd" d="M11.78 11.78a.75.75 0 0 0 0-1.06L6.56 5.5h3.69a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0-.75.75v5.5a.75.75 0 0 0 1.5 0V6.56l5.22 5.22a.75.75 0 0 0 1.06 0Z" clip-rule="evenodd" />
+                    </svg>
+                    <Social platform="facebook" username="monevmx"/>
+                </div>
+                <div class="flex pb-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 text-color-contet-withe-p">
+                        <path fill-rule="evenodd" d="M11.78 11.78a.75.75 0 0 0 0-1.06L6.56 5.5h3.69a.75.75 0 0 0 0-1.5h-5.5a.75.75 0 0 0-.75.75v5.5a.75.75 0 0 0 1.5 0V6.56l5.22 5.22a.75.75 0 0 0 1.06 0Z" clip-rule="evenodd" />
+                    </svg>
+                    <Social platform="behance" username="monevmx"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!--
     <Social platform="instagram" username="monev_mx"/>
     <Social platform="facebook" username="monevmx"/>
     <Social platform="behance" username="monevmx"/>
     <h2>{titleFooter}</h2>
-    
-</footer>
+-->
