@@ -1,0 +1,36 @@
+---
+const { titleUs, imgTeamOne, nameMemberOne, nameMemberTwo, positionMemberOne, positionMemberTwo, imgTeamTwo } = Astro.props
+---
+
+<div class="grid md:grid-cols-4 gap-0 sm:grid-cols-1 text-center ">
+    <div class="bg-gray-500 p-4">
+        <div class="flex text-center items-center justify-center h-4/5 pt-4">
+            <h2 class="font-bold text-2xl">{titleUs}</h2>
+        </div>
+    </div>
+    <div class="bg-gray-500 p-4 ">
+        
+    </div>
+    <div class="bg-gray-500 pl-5 pr-5">
+        <div class="py-5">
+                  <div class="">
+                    <img class="h-full w-full rounded " src={imgTeamOne} alt="">
+                  </div>
+                  <div class="text-center">
+                    <h2 class="text-base font-semibold leading-7 text-gray-900">{nameMemberOne}</h2>
+                    <p class="text-sm leading-6 tracking-tight text-center">{positionMemberOne}</p>
+                  </div>
+        </div>
+    </div>
+    <div class="bg-gray-500 pl-5 pr-5">
+        <div class="py-5">
+            <div class="">
+                <img class="h-full w-full rounded " src={imgTeamTwo} alt="">
+              </div>
+              <div class="text-center">
+                <h2 class="text-base font-semibold leading-7 text-gray-900">{nameMemberTwo}</h2>
+                <p class="text-sm leading-6 tracking-tight text-center">{positionMemberTwo}</p>
+              </div>
+        </div>
+    </div>
+</div>

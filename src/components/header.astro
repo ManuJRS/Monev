@@ -18,10 +18,31 @@ const headerLogo = "MONEV LOGO";
             <span></span>
         </div>
         <ul class="nav-list">
-            <li><a class="text-size" href="/">Home</a></li>
-            <li><a class="text-size" href="/portafolio">Portafolio</a></li>
-            <li><a class="text-size" href="/nosotros">Nosotros</a></li>
-            <li><a class="text-size" href="/contacto">Contacto</a></li>
+            <li class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-10 LinkArrowOne" id="LinkEffectTwo">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 19.5-15-15m0 0v11.25m0-11.25h11.25" />
+                  </svg>
+                <a class="text-size enlace-menu" href="/" id="LinkEffectOne">Home</a></li>
+            <li class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-10 LinkArrowOne" id="LinkEffectFour">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 19.5-15-15m0 0v11.25m0-11.25h11.25" />
+                  </svg>
+                <a class="text-size enlace-menu" href="/portafolio" id="LinkEffecTrhee">Portafolio</a></li>
+            <li class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-10 LinkArrowOne" id="LinkEffectSix">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 19.5-15-15m0 0v11.25m0-11.25h11.25" />
+                  </svg>
+                <a class="text-size enlace-menu" href="/portafolio" id="LinkEffecFive">Servicios</a></li>
+            <li class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-10 LinkArrowOne" id="LinkEffecteight">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 19.5-15-15m0 0v11.25m0-11.25h11.25" />
+                  </svg>
+                <a class="text-size enlace-menu" href="/nosotros" id="LinkEffecSeven">Nosotros</a></li>
+            <li class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-10 LinkArrowOne" id="LinkEffectTen">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 19.5-15-15m0 0v11.25m0-11.25h11.25" />
+                  </svg>
+                <a class="text-size enlace-menu" href="/contacto" id="LinkEffecNine">Contacto</a></li>
         </ul>
     </nav>
 </header>
@@ -39,4 +60,73 @@ cerrar.addEventListener("click", () =>{
     nav.classList.remove("visible");
 })
 
+// PRIMER EFECTO --------------------
+const LinkEffectOne = document.getElementById('LinkEffectOne');
+const LinkEffectTwo = document.getElementById('LinkEffectTwo');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+LinkEffectOne.addEventListener('mouseenter', () => {
+    LinkEffectTwo.classList.add('LinkArrowTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+LinkEffectOne.addEventListener('mouseleave', () => {
+    LinkEffectTwo.classList.remove('LinkArrowTwo');
+});
+
+// SEGUNDO EFECTO --------------------
+const LinkEffecTrhee = document.getElementById('LinkEffecTrhee');
+const LinkEffectFour = document.getElementById('LinkEffectFour');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+LinkEffecTrhee.addEventListener('mouseenter', () => {
+    LinkEffectFour.classList.add('LinkArrowTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+LinkEffecTrhee.addEventListener('mouseleave', () => {
+    LinkEffectFour.classList.remove('LinkArrowTwo');
+});
+
+// TERCER EFECTO --------------------
+const LinkEffecFive = document.getElementById('LinkEffecFive');
+const LinkEffectSix = document.getElementById('LinkEffectSix');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+LinkEffecFive.addEventListener('mouseenter', () => {
+    LinkEffectSix.classList.add('LinkArrowTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+LinkEffecFive.addEventListener('mouseleave', () => {
+    LinkEffectSix.classList.remove('LinkArrowTwo');
+});
+
+// CUARTO EFECTO --------------------
+const LinkEffecSeven = document.getElementById('LinkEffecSeven');
+const LinkEffecteight = document.getElementById('LinkEffecteight');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+LinkEffecSeven.addEventListener('mouseenter', () => {
+    LinkEffecteight.classList.add('LinkArrowTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+LinkEffecSeven.addEventListener('mouseleave', () => {
+    LinkEffecteight.classList.remove('LinkArrowTwo');
+});
+
+// QUINTO EFECTO --------------------
+const LinkEffecNine = document.getElementById('LinkEffecNine');
+const LinkEffectTen = document.getElementById('LinkEffectTen');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+LinkEffecNine.addEventListener('mouseenter', () => {
+    LinkEffectTen.classList.add('LinkArrowTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+LinkEffecNine.addEventListener('mouseleave', () => {
+    LinkEffectTen.classList.remove('LinkArrowTwo');
+});
 </script>

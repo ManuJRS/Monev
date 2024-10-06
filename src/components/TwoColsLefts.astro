@@ -1,0 +1,104 @@
+---
+const { LeftlinkOne, Leftfirstlink, LeftlinkTwo, Leftsecondlink, LeftlinkThree, LeftthirdLink, LeftFirstTitle, LeftSecondTitle, LeftFirstText, LeftSecondText } = Astro.props;
+
+
+---
+
+<div class="grid md:grid-cols-2 gap-0 md:h-80 sm:grid-cols-1">
+    <div class="bg-color-componentOne p-4 py-20">
+        <ul class="divide-y">
+            <li class="py-5">
+                <a
+                    href={Leftfirstlink}
+                    class="font-bold text-2xl tracking-wider text-color-contet-withe flex enlace-menu" id="elementThree"
+                    >{LeftlinkOne}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 arrowStyleOne movimientoX" id="elementoFour">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </a
+                >
+            </li>
+            <li class="py-5">
+                <a
+                    href={Leftsecondlink}
+                    class="font-bold text-2xl tracking-wider text-color-contet-withe flex enlace-menu" id="elementOne"
+                    >{LeftlinkTwo}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 arrowStyleOne movimientoX" id="elementoTwo">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                </a>
+            </li>
+            <li class="py-5">
+                <a
+                    href={LeftthirdLink}
+                    class="font-bold text-2xl tracking-wider text-color-contet-withe flex enlace-menu" id="elementFive"
+                    >{LeftlinkThree}
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 arrowStyleOne movimientoX" id="elementoSix">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                    </svg>
+                    </a
+                >
+            </li>
+            <li>
+                <a href="#" class="font-bold text-2xl tracking-wider"></a>
+            </li>
+        </ul>
+    </div>
+    <div class="bg-color-componentOne p-4">
+        <div class="py-20 text-color-contet-withe-p">
+            <h3 class="font-bold"><strong>{LeftFirstTitle}</strong></h3>
+            <p>
+                {LeftFirstText}
+            </p>
+        </div>
+        <div class="py-20 text-color-contet-withe-p">
+            <h3 class="font-bold"><strong>{LeftSecondTitle}</strong></h3>
+            <p>
+                {LeftSecondText}
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<script>
+// PRIMER EFECTO --------------------
+const elementOne = document.getElementById('elementOne');
+const elementoTwo = document.getElementById('elementoTwo');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+elementOne.addEventListener('mouseenter', () => {
+    elementoTwo.classList.add('arrowStyleTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+elementOne.addEventListener('mouseleave', () => {
+    elementoTwo.classList.remove('arrowStyleTwo');
+});
+//SEGUNDO EFECTO ----------------------
+const elementThree = document.getElementById('elementThree');
+const elementoFour = document.getElementById('elementoFour');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+elementThree.addEventListener('mouseenter', () => {
+    elementoFour.classList.add('arrowStyleTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+elementThree.addEventListener('mouseleave', () => {
+    elementoFour.classList.remove('arrowStyleTwo');
+});
+//TERCER EFECTO -----------------------------
+const elementFive = document.getElementById('elementFive');
+const elementoSix = document.getElementById('elementoSix');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+elementFive.addEventListener('mouseenter', () => {
+    elementoSix.classList.add('arrowStyleTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+elementFive.addEventListener('mouseleave', () => {
+    elementoSix.classList.remove('arrowStyleTwo');
+});
+</script>

@@ -14,7 +14,75 @@
   src: url('/src/assets/fonts/Nunito/Nunito-Regular.ttf') format('truetype');
 }
 
-h1 {
+.arrow-go {
+  opacity: 0;
+}
+
+.arrow-go:hover {
+  opacity: 1;
+}
+
+.arrowStyleOne {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.arrowStyleTwo {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+@keyframes movimientoX {
+  0%, 100% {
+    transform: translatex(10px); /* Posición inicial */
+  }
+  50% {
+    transform: translateY(10px); /* Movimiento hacia abajo */
+  }
+}
+
+.movimientoX {
+  animation: movimientoX 2s ease-in-out infinite; /* Duración y repetición */
+}
+
+.enlace-menu {
+  transition: 0.3s ease-in-out;
+
+}
+
+.enlace-menu:hover {
+  padding-right: 10px;
+  letter-spacing: 5px;
+  transition: 0.3s ease-in-out;
+}
+.enlace-menu-contact{
+  transition: 0.3s ease-in-out;
+}
+.enlace-menu-contact:hover {
+  letter-spacing: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.LinkArrowOne {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
+}
+.LinkArrowTwo {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.arrowContactOne {
+  transition: 0.6s ease-in-out;
+  width: 2%;
+}
+.arrowContactTwo {
+  width: 5%;
+  transition: 0.6s ease-in-out;
+}
+
+h1,h2 {
   font-family: 'titleFont';
 }
 
@@ -25,16 +93,17 @@ p {
 
 .card-hover {
     opacity: 0;
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Controla el tiempo del efecto */
-
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .card-hover:hover {
     opacity: 1;
-    transition-delay: 0.2s; /* Delay antes de que aparezca */
+    transition-delay: 0.2s; 
 }
 
-
+.footer_content {
+  width: 100%;
+}
 
 .title-color {
     color: #dad9d6;
@@ -169,4 +238,20 @@ nav.visible {
   .menu-icon-x span:nth-child(3) {
     transform: rotate(-45deg);
     top: 10px;
+  }
+
+
+  /* Definir la animación */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+      transform: translateY(50px); /* Movimiento hacia abajo */
+    }
+  }
+
+  /* Aplicar la animación al SVG */
+  .bounce {
+    animation: bounce 2s ease-in-out infinite; /* Duración y repetición */
   }

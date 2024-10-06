@@ -1,241 +1,87 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ContentIntro from "../components/contentIntro.astro";
+import GridProyects from "../components/GridProyects.astro"
+import TwoColsLefts from "../components/TwoColsLefts.astro";
+import TwoColsRight from "../components/TwoColsRight.astro";
+import ContentSocial from "../components/ContentSocial.astro";
 const titlePage = "Monev Mx - AGENCIA ESPECIALIZADA";
-const indexDescriptionOne =
-    "Monev es una agencia especializada en generar soluciones estratégicamente creativas para satisfacer las necesidades de sus clientes. Su metodología de trabajo está basada en el Design Thinking, centrada en el usuario y orientada a la acción";
-
-const indexDescriptiontwo = "El objetivo de Monev es ofrecer soluciones innovadoras, reales, viables y alcanzables que ayuden a sus clientes a alcanzar sus objetivos."
-
-    
 ---
 
 <BaseLayout titlePage={titlePage}>
 <!-- COMPONENTE DE PRESENTACION -->
-
- <div class="sticky top-0 z-10 pt-12 h-92">
-    <div class="grid md:grid-cols-2 sm:grid-cols-2 gap-0 h-72">
-        <div class="pl-2">
-            <h1 class="font-bold pt-2 pb-5 text-2xl title-color">SOMOS UNA AGENCIA ESPECIALIZADA</h1>
-            <p class="md:text-2xl text-color pt-5 fonttextos"><strong>{indexDescriptionOne}</strong></p>
-            <p class="md:text-2xl text-color pt-5 fonttextos"><strong>{indexDescriptiontwo}</strong></p>
-
-        </div>
-        <div class="p-10 h-20">
-            
-        </div>
-    </div>
- </div>
-
+<ContentIntro 
+    titleOne="SOMOS UNA AGENCIA ESPECIALIZADA"
+    descriptionOne ="Monev es una agencia especializada en generar soluciones estratégicamente creativas para satisfacer las necesidades de sus clientes. Su metodología de trabajo está basada en el Design Thinking, centrada en el usuario y orientada a la acción"
+    descriptionTwo ="El objetivo de Monev es ofrecer soluciones innovadoras, reales, viables y alcanzables que ayuden a sus clientes a alcanzar sus objetivos."
+/>
 <!-- COMPONENTE DE PROYECTOS -->
- <div class="bg-gray-600 z-10 relative">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 p-4 h-auto">
-        <div class="relative p-4 md:col-span-1 sm:col-span-3 md:h-92 sm:h-64 h-64 cursor-pointer">
-        <a href="#">
-            <img 
-            src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
-            alt="proyecto 1"
-            class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
-            />
-            <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
-                <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
-                    <strong>Primer Proyecto</strong>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
-                    <span>11/11/11</span>
-                </div>
-            </div>
-        </a>
-        </div>
-        <div class="relative p-4 md:col-span-2 sm:col-span-3 md:h-92 sm:h-64 h-64 cursor-pointer">
-            <a href="#">
-                <img 
-                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
-                alt="proyecto 1"
-                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
-                />
-                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
-                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
-                        <strong>Primer Proyecto</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
-                        <span>11/11/11</span>
-                    </div>
-                </div>
-            </a> 
-        </div>
-        <div class="relative p-4 md:h-72 sm:h-64 h-64 cursor-pointer">
-            <a href="#">
-                <img 
-                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
-                alt="proyecto 1"
-                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
-                />
-                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
-                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
-                        <strong>Primer Proyecto</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
-                        <span>11/11/11</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="relative p-4 md:h-72 sm:h-64 h-64 cursor-pointer">
-            <a href="#">
-                <img 
-                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
-                alt="proyecto 1"
-                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
-                />
-                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
-                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
-                        <strong>Primer Proyecto</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
-                        <span>11/11/11</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="relative p-4 row-span-2 sm:h-64 md:h-120 h-64 cursor-pointer">
-            <a href="#">
-                <img 
-                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
-                alt="proyecto 1"
-                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
-                />
-                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
-                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
-                        <strong>Primer Proyecto</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
-                        <span>11/11/11</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="relative p-4 col-span-0 sm:h-64 md:h-72 h-64 cursor-pointer">
-            <a href="#">
-                <img 
-                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
-                alt="proyecto 1"
-                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
-                />
-                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
-                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
-                        <strong>Primer Proyecto</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
-                        <span>11/11/11</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-        <div class="relative p-4 col-span-0 sm:h-64 md:h-72 h-64 cursor-pointer">
-            <a href="#">
-                <img 
-                src="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg" 
-                alt="proyecto 1"
-                class="absolute inset-0 object-cover w-full h-full z-0 opacity-80"
-                />
-                <div class="absolute w-full h-full bottom-0 left-0 p-4 z-10 bg-black bg-opacity-75 card-hover">
-                    <div class="absolute bottom-0 left-0 p-4 text-white	font-san">
-                        <strong>Primer Proyecto</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, reiciendis!</p>
-                        <span>11/11/11</span>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-</div>
-<!-- COMPONENTE DE NUESTROS SERVICIOS -->
- <div class="z-20 bg-gray-600 relative">
-    <div class="grid md:grid-cols-2 gap-0 md:h-80 sm:grid-cols-1">
-        <div class="bg-color-componentOne p-4 py-20">
-            <ul class="divide-y">
-                <li class="py-5">
-                    <a href="#" class="font-bold text-2xl tracking-wider text-color-contet-withe"
-                        >Branding</a>
-                </li>
-                <li class="py-5">
-                    <a href="#" class="font-bold text-2xl tracking-wider text-color-contet-withe"
-                        >Publicidad</a>
-                </li>
-                <li>
-                    <a href="#" class="font-bold text-2xl tracking-wider"
-                        ></a>
-                </li>
-            </ul>
-        </div>
-        <div class="bg-color-componentOne p-4">
-            <div class="py-20 text-color-contet-withe-p">
-                <h3 class="font-bold "><strong>Nuestros servicios</strong></h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores labore temporibus consequatur veniam possimus, iure
-                    eius accusantium rem praesentium maxime pariatur aut vel ipsa
-                    repellendus ipsam dolor dolore excepturi commodi!
-                </p>
-            </div>
-        <div class="py-20 text-color-contet-withe-p">
-                <h3 class="font-bold "><strong>Nuestros servicios</strong></h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores labore temporibus consequatur veniam possimus,
-                    iure eius accusantium rem praesentium maxime pariatur aut
-                    vel ipsa repellendus ipsam dolor dolore excepturi commodi!
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="grid md:grid-cols-2 gap-0 md:h-80 sm:grid-cols-1">
-        <div class="bg-gray-600 p-4">
-            <div class="py-20">
-                <h3 class="font-bold">Nuestros servicios</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores labore temporibus consequatur veniam possimus, iure
-                    eius accusantium rem praesentium maxime pariatur aut vel ipsa
-                    repellendus ipsam dolor dolore excepturi commodi!
-                </p>
-            </div>
-
-            <div class="py-20">
-                <h3 class="font-bold ">Nuestros servicios</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores labore temporibus consequatur veniam possimus,
-                    iure eius accusantium rem praesentium maxime pariatur aut
-                    vel ipsa repellendus ipsam dolor dolore excepturi commodi!
-                </p>
-            </div>
-        </div>
-
-        <div class="bg-gray-600 p-4 py-20">
-            <ul class="divide-y">
-                <li class="py-5">
-                    <a href="#" class="font-bold text-2xl tracking-wider"
-                        >Branding</a>
-                </li>
-                <li class="py-5">
-                    <a href="#" class="font-bold text-2xl tracking-wider"
-                        >Publicidad</a>
-                </li>
-                <li>
-                    <a href="#" class="font-bold text-2xl tracking-wider"
-                        ></a>
-                </li>
-            </ul>
-        </div>
-    </div>
+<GridProyects 
+    imgOne="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg"
+    titleOne="Proyecto uno"
+    textOne="este es el proyecto uno"
+    dateOne="11/11/11"
+    imgTwo="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg"
+    titleTwo="Proyecto uno"
+    textTwo="este es el proyecto uno"
+    dateTwo="11/11/11"
+    imgThree="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg"
+    titleThree="Proyecto uno"
+    textThree="este es el proyecto uno"
+    dateThree="11/11/11"
+    imgFour="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg"
+    titleFour="Proyecto uno"
+    textFour="este es el proyecto uno"
+    dateFour="11/11/11"
+    imgFive="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg"
+    titleFive="Proyecto uno"
+    textFive="este es el proyecto uno"
+    dateFive="11/11/11"
+    imgSix="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg"
+    titleSix="Proyecto uno"
+    textSix="este es el proyecto uno"
+    dateSix="11/11/11"
+    imgSeven="https://1.bp.blogspot.com/-H0obwPWWB2Q/VjcgdxRG6bI/AAAAAAAAAAg/V4UiIbUHnB0/s640/Pug_portrait.jpg"
+    titleSeven="Proyecto uno"
+    textSeven="este es el proyecto uno"
+    dateSeven="11/11/11"
+/>
+<!-- COMPONENTE DE NUESTROS SERVICIOS CON ENLACES A LA IZQUIERDA-->
+<div class="z-20 bg-gray-600 relative">
+<TwoColsLefts
+    LeftlinkOne = "Branding"
+    Leftfirstlink = "/"
+    LeftlinkTwo = "Publicidad"
+    Leftsecondlink = "/"
+    LeftlinkThree = "Proyectos"
+    LeftthirdLink = "/"
+    LeftFirstTitle = "Nuestros proyectos"
+    LeftFirstText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore temporibus consequatur veniam possimus, iure eius accusantium rem praesentium maxime pariatur aut vel ipsa repellendus ipsam dolor dolore excepturi commodi!"
+    LeftSecondTitle = "Proyectos"
+    LeftSecondText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore temporibus consequatur veniam possimus, iure eius accusantium rem praesentium maxime pariatur aut vel ipsa repellendus ipsam dolor dolore excepturi commodi!"
+/>
+<!-- COMPONENTE DE NUESTROS SERVICIOS CON ENLACES A LA DERECHA-->
+<TwoColsRight
+RightlinkOne = "Branding"
+Rightfirstlink = "/"
+RightlinkTwo = "Publicidad"
+Rightsecondlink = "/"
+RightlinkThree = "Proyectos"
+RightthirdLink = "/"
+RightFirstTitle = "Contacto"
+RightFirstText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore temporibus consequatur veniam possimus, iure eius accusantium rem praesentium maxime pariatur aut vel ipsa repellendus ipsam dolor dolore excepturi commodi!"
+RightSecondTitle = "Proyectos"
+RightSecondText = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores labore temporibus consequatur veniam possimus, iure eius accusantium rem praesentium maxime pariatur aut vel ipsa repellendus ipsam dolor dolore excepturi commodi!"
+/>
 <!-- COMPONENTE DE NUESTRAS REDES SOCIALES Y CONTACTO -->
-    <div class="grid md:grid-cols-1 gap-0 md:h-72 sm:grid-cols-1">
-        <div class="bg-gray-500 p-4">
-            <div class="py-20">
-                <h3 class="font-bold">Nuestros servicios</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Asperiores labore temporibus consequatur veniam possimus, iure
-                    eius accusantium rem praesentium maxime pariatur aut vel ipsa
-                    repellendus ipsam dolor dolore excepturi commodi!
-                </p>
-            </div>
-        </div>
-    </div>
+<ContentSocial 
+    titleUs = "¿Quienes Somos?"
+    imgTeamOne = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    nameMemberOne = "Nombre"
+    positionMemberOne = "Team"
+    imgTeamTwo = "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+    nameMemberTwo = "Nombre"
+    positionMemberTwo = "Team"
+/>
 </div>
 </BaseLayout>

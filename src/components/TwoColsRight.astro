@@ -1,0 +1,35 @@
+---
+const { RightlinkOne, Rightfirstlink, RightlinkTwo, Rightsecondlink, RightlinkThree, RightthirdLink, RightFirstTitle, RightSecondTitle, RightFirstText, RightSecondText } = Astro.props;
+---
+
+<div class="grid md:grid-cols-1 gap-0 md:h-64 sm:grid-cols-1">
+    <div class="bg-gray-600 p-4">
+        <div class="py-16">
+            <h2 class="font-bold text-2xl">{RightFirstTitle}</h2>
+            <p>
+                {RightFirstText}
+            </p>
+            <div class="flex pt-5">
+                <a href="/contacto" class="font-bold text-lg enlace-menu-contact" id="elementContactOne">pongámonos en contacto</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 arrowContactOne" id="elementoContactTwo">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>  
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const elementContactOne = document.getElementById('elementContactOne');
+const elementoContactTwo = document.getElementById('elementoContactTwo');
+
+// CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+elementContactOne.addEventListener('mouseenter', () => {
+    elementoContactTwo.classList.add('arrowContactTwo');
+});
+
+// CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+elementContactOne.addEventListener('mouseleave', () => {
+    elementoContactTwo.classList.remove('arrowContactTwo');
+});
+</script>
