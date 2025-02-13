@@ -82,6 +82,19 @@
   transition: 0.6s ease-in-out;
 }
 
+.portafolio_div {
+  height: 100%;
+}
+
+.text_container_proyects {
+  background-color: #0000008f;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.text_container_proyects:hover {
+  opacity: 1;
+}
 h1,h2 {
   font-family: 'titleFont';
 }

@@ -4,8 +4,6 @@ import Footer from "../components/footer.astro";
 import "../styles/global.css";
 
 const { titlePage } = Astro.props;
-
-
 ---
 
 <html lang="es" class="bg-gray-600">
@@ -17,14 +15,11 @@ const { titlePage } = Astro.props;
         <title>{titlePage}</title>
     </head>
     <body>
-        
-                <div>
-                    <Header  class="fixed top-0 left-0 w-full bg-white shadow-md z-50"/>
-                    <slot />
-                <Footer />
-                </div>
-      
-
+        <div>
+            <Header class="fixed top-0 left-0 w-full bg-white shadow-md z-50" />
+            <slot />
+            <Footer />
+        </div>
         <script src="/src/scripts/main.js"></script>
     </body>
 </html>

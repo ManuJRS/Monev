@@ -1,9 +1,17 @@
 ---
-const { title, url, previmg } = Astro.props;
+const { title, url, previmg, tags } = Astro.props;
 ---
-
-<li>
-    <a href={url}>{title}
-    <img src={previmg} width="300">
+<div class="relative md:col-span-1 sm:col-span-3 md:h-72 sm:h-64 cursor-pointer ">
+    <a href={url}>
+        <div class="">
+            <div class="">
+                <div class="absolute z-10 text_container_proyects h-72" >
+                    <h2 class="p-3 text-white">{title}</h2>
+                    <p class="p-3 text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime cum ipsam atque cumque, nostrum enim.</p>
+                    <span class="p-3 text-white">{tags}</span>
+                </div>
+                <img src={previmg} width="300" class="absolute inset-0 object-cover w-full h-full z-0 opacity-80" />
+            </div>
+        </div>
     </a>
-</li>
+</div>

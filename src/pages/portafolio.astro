@@ -2,20 +2,56 @@
 import ProyectPost from "../components/ProyectPost.astro"
 import BaseLayout from "../layouts/BaseLayout.astro"
 const titlePage = "Monev Mx || NUESTROS PROYECTOS"
+import ContentIntro from "../components/contentIntro.astro"
 const allPost = await Astro.glob("../pages/posts/*.md")
+allPost.sort((a, b) => a.frontmatter.order - b.frontmatter.order)
 ---
 
 <BaseLayout titlePage={titlePage}>
-<h1>{titlePage}</h1>
-<p>Nuestros proyectos</p>
-{
-    allPost.map((post) => (
-        <ProyectPost 
-        url={post.url} 
-        title={post.frontmatter.title}
-        previmg={post.frontmatter.previmg}
-        />
-    ))
-}
+    <ContentIntro 
+    titleOne="NUESTROS PROYECTOS"
+    descriptionOne ="Monev es una agencia especializada en generar soluciones estratégicamente creativas para satisfacer las necesidades de sus clientes. Su metodología de trabajo está basada en el Design Thinking, centrada en el usuario y orientada a la acción"
+    descriptionTwo ="El objetivo de Monev es ofrecer soluciones innovadoras, reales, viables y alcanzables que ayuden a sus clientes a alcanzar sus objetivos."
+/>
+    <div class="bg-gray-600">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 p-3 z-10 relative bg-gray-600">
+            {
+                allPost.map((post) => (
+                    <ProyectPost 
+                    url={post.url} 
+                    title={post.frontmatter.title}
+                    previmg={post.frontmatter.previmg}
+                    tags={post.frontmatter.tags}
+                    />
+                ))
+            }
+        </div>
+    </div>
+    <div class="h-64 relative z-20 bg-gray-500">
+        <div class="pl-3 pt-16">
+            <h2 class="font-bold text-3xl tracking-wider text-gray-800">Mas informacion?</h2>
+            <p class="text-gray-400" >Te gustaria cotizar un proyecto de branding o publicidad con nosotros? pongamonos en contacto</p>
+            <div class="flex pt-5">
+                <a href="/contacto" class="font-bold text-lg enlace-menu-contact text-gray-400" id="elementContactOne">pongámonos en contacto</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 arrowContactOne" id="elementoContactTwo">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>
+            </div>
+        </div>
+    </div>
 </BaseLayout>
 
+<script>
+    const elementContactOne = document.getElementById('elementContactOne');
+    const elementoContactTwo = document.getElementById('elementoContactTwo');
+    
+    // CON ESTO DETECTAMOS LA ENTRADA DEL POINTER Y SE ACTIVA EL EFECTO
+    elementContactOne.addEventListener('mouseenter', () => {
+        elementoContactTwo.classList.add('arrowContactTwo');
+    });
+    
+    // CON ESTO DETECTAMOS LA SALIDA DEL POINTER Y SE DESACTIVA EL EFECTO
+    elementContactOne.addEventListener('mouseleave', () => {
+        elementoContactTwo.classList.remove('arrowContactTwo');
+    });
+</script>

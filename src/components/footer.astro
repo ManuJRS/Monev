@@ -3,18 +3,18 @@ const titleFooter = "Monev Logo footer";
 import Social from "./Social.astro";
 ---
 
-<footer class="md:h-60 bg-color-componentOne z-50 absolute footer_content">
+<footer class="md:h-60 bg-color-componentOne z-50 absolute">
     <div class="grid md:grid-cols-5 md:h-60 gap-0 sm:grid-cols-1">
         <div class="md:col-span-2 block">
             <div>
-                <h2 class="pt-4 pl-5 text-2xl text-color-contet-withe-t">Tienes un proyecto en mente?</h2>
+                <h2 class="pt-4 pl-5 text-3xl tracking-wider text-color-contet-withe-t">Tienes un proyecto en mente?</h2>
             </div>
 
             <div class="pt-14">
                 <div class="flex pl-5">
                     <a href="/contacto" class="font-bold text-lg enlace-menu-contact text-color-contet-withe-p" id="elementContactOne">pongámonos en contacto</a>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 arrowContactOne" id="elementoContactTwo">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
                     </svg>
                 </div>
                 <p class="pr-48 pl-5 text-color-contet-withe-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem deserunt, quod dolorum quas fugiat, expedita iusto repudiandae explicabo neque quaerat odit obcaecati nostrum! Itaque quo necessitatibus sed placeat quia.</p>
@@ -24,7 +24,12 @@ import Social from "./Social.astro";
         <div class="md:col-span-1 pl-5 flex md:h-60 pb-7">
             <div class="flex flex-col justify-end w-full pb-14">
                 <h2 class="pb-1 text-color-contet-withe-t">Donde nos encontramos?</h2>
-                <p class="text-color-contet-withe-p">Mérida, Yucatán, México</p>
+                <div class="flex">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 text-color-contet-withe-p">
+                        <path fill-rule="evenodd" d="m7.539 14.841.003.003.002.002a.755.755 0 0 0 .912 0l.002-.002.003-.003.012-.009a5.57 5.57 0 0 0 .19-.153 15.588 15.588 0 0 0 2.046-2.082c1.101-1.362 2.291-3.342 2.291-5.597A5 5 0 0 0 3 7c0 2.255 1.19 4.235 2.292 5.597a15.591 15.591 0 0 0 2.046 2.082 8.916 8.916 0 0 0 .189.153l.012.01ZM8 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd" />
+                      </svg>                      
+                    <p class="text-color-contet-withe-p pl-1">Mérida, Yucatán, México</p>
+                </div>
             </div>
         </div>
         <div class="md:col-span-1 pl-5 flex md:h-60 pb-7">
